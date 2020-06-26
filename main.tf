@@ -3,7 +3,7 @@ terraform {
     resource_group_name  = "AADDS"
     storage_account_name = "tfstateflexera"
     container_name       = "tfstate"
-    key                  = "terraform.tfstate-${var.execution}"
+    key                  = "terraform.tfstate"
   }
 }
 provider "azurerm" {
